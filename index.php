@@ -74,54 +74,72 @@
         <div class="container">
             <h1>Venha para a maior Feira de Imóveis do Paraná</h1>
             <p></p>
+            <div class="row">
+                <div class="col-md-1 col-sm-1"></div>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <div class="item">
+                        <div class="row">
+                            <a href="<?php the_permalink() ?>">
+                                <div class="col-md-6 col-sm-6">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <?php the_post_thumbnail(''); ?>
+                                    <?php endif; ?>
+                                </div><!-- md-6 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <span><?php the_date(); ?></span>
+                                    <h4><?php the_title(); ?></h4>
+                                </div><!-- md-6 -->
+                            </a>
+                        </div><!-- row -->
+                    </div><!-- item -->
+                <?php endwhile; endif; ?>
+                <div class="col-md-5 col-sm-5">
+                    <div class="item">
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noticia.jpg">
+                            <p>28.05.2019</p>
+                            <h4>Feira de imóveis do Paraná reúne mais de 30 mil ofertas na próxima quarta-feira em Curitiba.</h4>
+                        </a>
+                        <a href="" class="btn-mais">+</a>
+                    </div><!-- item -->
+                </div><!-- md-5 -->
+                <div class="col-md-5 col-sm-5">
+                    <div class="item">
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noticia.jpg">
+                            <p>28.05.2019</p>
+                            <h4>Feira de imóveis do Paraná reúne mais de 30 mil ofertas na próxima quarta-feira em Curitiba.</h4>
+                        </a>
+                        <a href="" class="btn-mais">+</a>
+                    </div><!-- item -->
+                </div><!-- md-5 -->
+                <div class="col-md-1 col-sm-1"></div>
+            </div><!-- row -->
         </div><!-- container -->
     </section><!-- sobre -->
 
     <section class="marcas">
         <div class="container">
-            <?php
-                $args = array(
-                    'posts_per_page' => 5,
-                    'post_type'      => 'marcas',
-                );
+            <div class="marca1">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
 
-                $marcas = get_posts($args);
-            ?>
+                    </div><!-- md-6 -->
+                    <div class="col-md-6 col-sm-6">
 
-            <?php foreach ($marcas as $marca) : ?>
-                <?php if ($marca->marca_tipo == 'Patrocínio Master') { ?>
-                    <?php
-                        $marcas = rwmb_meta('marca_foto', 'type=plupload_image', $marca->ID);
-                        foreach ( $marcas as $marca ) {
-                            echo "<img src='{$marca['url']}' alt='{$marca['alt']}' />";
-                        }
-                    ?>
-                <?php } ?>
-                <?php if ($marca->marca_tipo == 'Patrocínio Secundário') { ?>
-                    <?php
-                        $marcas = rwmb_meta('marca_foto', 'type=plupload_image', $marca->ID);
-                        foreach ( $marcas as $marca ) {
-                            echo "<img src='{$marca['url']}' alt='{$marca['alt']}' />";
-                        }
-                    ?>
-                <?php } ?>
-                <?php if ($marca->marca_tipo == 'Organização') { ?>
-                    <?php
-                        $marcas = rwmb_meta('marca_foto', 'type=plupload_image', $marca->ID);
-                        foreach ( $marcas as $marca ) {
-                            echo "<img src='{$marca['url']}' alt='{$marca['alt']}' />";
-                        }
-                    ?>
-                <?php } ?>
-                <?php if ($marca->marca_tipo == 'Realização') { ?>
-                    <?php
-                        $marcas = rwmb_meta('marca_foto', 'type=plupload_image', $marca->ID);
-                        foreach ( $marcas as $marca ) {
-                            echo "<img src='{$marca['url']}' alt='{$marca['alt']}' />";
-                        }
-                    ?>
-                <?php } ?>
-            <?php endforeach; ?>
+                    </div><!-- md-6 -->
+                </div><!-- row -->
+            </div><!-- marca1 -->
+            <div class="marca2">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+
+                    </div><!-- md-6 -->
+                    <div class="col-md-6 col-sm-6">
+
+                    </div><!-- md-6 -->
+                </div><!-- row -->
+            </div><!-- marca2 -->
         </div><!-- container -->
     </section><!-- marcas -->
 
