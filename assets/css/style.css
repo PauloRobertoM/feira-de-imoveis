@@ -219,6 +219,24 @@ ul.nav>li>a:hover {
     transform: scale(1.05);
 }
 
+.sobre {
+    padding: 80px 0;
+}
+.sobre h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #20192d;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.sobre .p-sobre {
+    font-size: 16px;
+    color: #3d363e;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 60px;
+}
 .sobre .item {
     border: 3px solid #dbdbdb;
     border-radius: 5px;
@@ -277,11 +295,139 @@ ul.nav>li>a:hover {
     color: #20192d;
 }
 
+.marcas h2 {
+    font-size: 13px;
+    color: #998b9b;
+    text-transform: uppercase;
+    margin: 0 30px 0 0;
+}
+.marcas img {
+    margin: 0 10px;
+}
+.marcas .marca1,
+.marcas .marca2 {
+    padding: 50px 0;
+}
+.marcas.marcas2 {
+    background: #ededed;
+}
+.marcas .marca1>div,
+.marcas .marca2>div {
+    display: flex;
+    align-items: center;
+}
+.marcas .marca1>div>div,
+.marcas .marca2>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.menu-geral {
+    padding: 60px 0;
+    background: linear-gradient(88deg, #456ad3, #4e2898);
+}
+.menu-geral ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menu-geral ul>li:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50px;
+    display: block;
+    top: -13px;
+    position: relative;
+    left: -1px;
+}
+.menu-geral ul>li:first-child:after {
+    display: none;
+}
+.menu-geral ul>li>a {
+    font-size: 16px;
+    color: #fff!important;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+.menu-geral ul>li>a:hover {
+    font-weight: 700;
+}
+
+footer {
+    padding: 40px 0;
+}
+footer>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #998b9b;
+    margin: 0;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.redes h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #998b9b;
+    text-transform: uppercase;
+    margin: 0;
+}
+.redes ul {
+    margin: 0 40px 0 30px;
+}
+.redes ul>li {
+    float: left;
+    margin-right: 15px;
+}
+.redes ul .fa {
+    font-size: 34px;
+    color: #485bc6;
+    transition: 1s;
+}
+.redes ul>li>a:hover .fa {
+    color: #998b9b;
+}
+.redes .como-chegar,
+.redes .como-chegar>li {
+    margin-right: 0;
+}
+
+.vitrine-interna {
+    width: 100%;
+    height: 200px;
+    background: url('../images/vitrine.jpg') no-repeat;
+    background-size: cover;
+    margin-top: -200px;
+}
+.vitrine-interna:before {
+    content: "";
+    display: block;
+    background: url(../images/bg-border-top.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 10px;
+}
+
+.dd-interna {
+    padding: 20px 0;
+}
+
 /* --- MOBILE --- */
 @media (max-width: 767px) {
     #bs-example-navbar-collapse-1 {
         float: none;
-        background: #fff;
+        background: #5941c3;
         z-index: 300;
         position: relative;
         min-height: 300px;
@@ -289,7 +435,13 @@ ul.nav>li>a:hover {
         padding: 10px 30px;
         width: 100%;
         margin: 0 auto;
-        top: -30px;
+        top: -24px;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #fff!important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff!important;
     }
     .navbar-toggle {
         padding: 15px 15px;
@@ -314,15 +466,171 @@ ul.nav>li>a:hover {
         display: block!important;
         margin: 10px 0 0 0;
     }
+    ul.nav>li:after {
+        display: none;
+    }
     .navbar-nav>li>a {
         padding: 15px 10px!important;
     }
-    .navbar-brand .logo {
-        width: 200px;
+    .navbar-header .logo,
+    .navbar-default,
+    .navbar-header .navbar-brand {
+        height: 100px;
+    }
+    .vitrine {
+        margin-top: -101px;
+    }
+    .vitrine img {
+        height: 200px;
+    }
+    .encontre-seu-imovel {
+        position: relative;
+        margin-top: -108px;
+        z-index: 1;
+    }
+    .encontre-seu-imovel h2 {
+        font-size: 39px;
+    }
+    .encontre-seu-imovel form {
+        width: 100%;
+        padding: 40px 15px 20px;
+    }
+    .redes-sociais {
+        display: block;
+        margin-top: 30px;
+    }
+    .redes-sociais h4 {
+        text-align: center;
+    }
+    .redes-sociais ul {
+        margin: 10px 0 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .redes-sociais ul>li {
+        float: none;
+        margin-right: 0;
+    }
+    .app {
+        height: auto;
+        padding: 30px 0;
+        background-position: right;
+    }
+    .app .container>div {
+        height: auto;
+        display: block;
+    }
+    .app ul {
+        margin-top: 20px;
+    }
+    .app ul>li {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .sobre {
+        padding: 30px 0;
+    }
+    .sobre .p-sobre {
+        margin: 0 auto 10px;
+    }
+    .sobre .item {
+        margin-top: 70px;
+        min-height: 380px;
+    }
+    .sobre .item img {
+        height: 160px;
+    }
+    .marcas .marca1,
+    .marcas .marca2 {
+        padding: 50px 0 10px;
+    }
+    .marcas .marca1>div,
+    .marcas .marca2>div {
+        display: block;
+    }
+    .marcas .marca1>div>div,
+    .marcas .marca2>div>div {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .marcas h2 {
+        margin: 0 0 10px 0;
+    }
+    .marcas img {
+        margin: 0 10px 20px;
+    }
+    .menu-footer ul {
+        text-align: center;
+        display: block;
+    }
+    .menu-footer ul>li:after {
+        display: none;
+    }
+    footer>div>div {
+        display: block;
+        text-align: center;
+    }
+    .redes {
+        display: block;
+        margin-top: 20px;
+    }
+    .redes ul {
+        margin: 10px 0 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    
+    .navbar-header img,
+    .navbar-default,
+    .navbar-header .navbar-brand,
+    ul.nav {
+        height: 150px;
+    }
+    ul.nav>li>a {
+        font-size: 14px;
+    }
+    .vitrine {
+        margin-top: -151px;
+    }
+    .encontre-seu-imovel h2 {
+        font-size: 38px;
+    }
+    .encontre-seu-imovel form {
+        width: 280px;
+    }
+    .redes-sociais ul {
+        margin: 0 20px 0 10px;
+    }
+    .redes-sociais ul .fa {
+        font-size: 28px;
+    }
+    .sobre .item h4 {
+        font-size: 18px;
+    }
+    .marcas h2 {
+        font-size: 10px;
+        margin: 0 10px 0 0;
+    }
+    .marcas img {
+        width: 100px;
+    }
+    footer p {
+        font-size: 11px;
+    }
+    .redes h4 {
+        font-size: 11px;
+    }
+    .redes ul {
+        margin: 0 20px 0 10px;
+    }
+    .redes ul .fa {
+        font-size: 28px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     

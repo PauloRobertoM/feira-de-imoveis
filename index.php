@@ -38,20 +38,20 @@
                     <button><i class="fa fa-search" aria-hidden="true"></i> BUSCAR</button>
                 </form>
             </div><!-- encontre-seu-imovel -->
-            <section class="redes-sociais">
+            <div class="redes-sociais">
                 <h4>SIGA NOSSAS<br />REDES SOCIAIS</h4>
                 <ul>
-                    <li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/events/181468232634947/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/feiraimoveispr" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/feiraimoveispr/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.flickr.com/photos/ademipr" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/feiraimoveispr" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
                 </ul>
                 <h4>COMO<br />CHEGAR</h4>
                 <ul class="como-chegar">
                     <li><a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/waze.png"></a></li>
                 </ul>
-            </section><!-- redes-sociais -->
+            </div><!-- redes-sociais -->
         </div><!-- container -->
     </section><!-- dados -->
 
@@ -73,47 +73,29 @@
     <section class="sobre">
         <div class="container">
             <h1>Venha para a maior Feira de Imóveis do Paraná</h1>
-            <p></p>
+            <p class="p-sobre">Está chegando e você não pode perder, são diversos expositores entre as empresas mais renomadas do país em um só lugar, trazendo para você os melhores imóveis com as condições mais improváveis que você pode encontrar hoje no mercado. Traga sua família e aproveite toda a estrutura que montamos para o seu dia ser confortável com nossa área de recreação e Food Trucks para todas as idades e gostos. Não perca, a entrada e o estacionamento são gratuitos.</p>
             <div class="row">
-                <div class="col-md-1 col-sm-1"></div>
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <div class="item">
-                        <div class="row">
+                <div class="col-md-1"></div>
+                <?php
+                    $args = array('posts_per_page' => 2);
+                    $query = new WP_Query( $args );
+                ?>
+                <?php if ( have_posts() ) : while ( $query->have_posts()) : $query->the_post(); ?>
+                    <?php $date = get_the_date(); ?>
+                    <div class="col-md-5 col-sm-6">
+                        <div class="item">
                             <a href="<?php the_permalink() ?>">
-                                <div class="col-md-6 col-sm-6">
-                                    <?php if (has_post_thumbnail()) : ?>
-                                        <?php the_post_thumbnail(''); ?>
-                                    <?php endif; ?>
-                                </div><!-- md-6 -->
-                                <div class="col-md-6 col-sm-6">
-                                    <span><?php the_date(); ?></span>
-                                    <h4><?php the_title(); ?></h4>
-                                </div><!-- md-6 -->
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <?php the_post_thumbnail(''); ?>
+                                <?php endif; ?>
+                                <p><?= $date ?></p>
+                                <h4><?php the_title(); ?></h4>
                             </a>
-                        </div><!-- row -->
-                    </div><!-- item -->
+                            <a href="<?php the_permalink() ?>" class="btn-mais">+</a>
+                        </div><!-- item -->
+                    </div><!-- md-5 -->
                 <?php endwhile; endif; ?>
-                <div class="col-md-5 col-sm-5">
-                    <div class="item">
-                        <a href="">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noticia.jpg">
-                            <p>28.05.2019</p>
-                            <h4>Feira de imóveis do Paraná reúne mais de 30 mil ofertas na próxima quarta-feira em Curitiba.</h4>
-                        </a>
-                        <a href="" class="btn-mais">+</a>
-                    </div><!-- item -->
-                </div><!-- md-5 -->
-                <div class="col-md-5 col-sm-5">
-                    <div class="item">
-                        <a href="">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noticia.jpg">
-                            <p>28.05.2019</p>
-                            <h4>Feira de imóveis do Paraná reúne mais de 30 mil ofertas na próxima quarta-feira em Curitiba.</h4>
-                        </a>
-                        <a href="" class="btn-mais">+</a>
-                    </div><!-- item -->
-                </div><!-- md-5 -->
-                <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-1"></div>
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- sobre -->
@@ -123,21 +105,35 @@
             <div class="marca1">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
-
+                        <h2>patrocínio master</h2>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/caixa.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/governo.png" alt="">
                     </div><!-- md-6 -->
                     <div class="col-md-6 col-sm-6">
-
+                        <h2>patrocínio master</h2>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fiep.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/imovel.png" alt="">
                     </div><!-- md-6 -->
                 </div><!-- row -->
             </div><!-- marca1 -->
+        </div><!-- container -->
+    </section><!-- marcas -->
+
+    <section class="marcas marcas2">
+        <div class="container">
             <div class="marca2">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6">
-
-                    </div><!-- md-6 -->
-                    <div class="col-md-6 col-sm-6">
-
-                    </div><!-- md-6 -->
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 col-sm-6">
+                        <h2>ORGANIZAÇÃO</h2>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/infinitoo.png" alt="">
+                    </div><!-- md-5 -->
+                    <div class="col-md-5 col-sm-6">
+                        <h2>REALIZAÇÃO</h2>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ademi.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sinduscon.png" alt="">
+                    </div><!-- md-5 -->
+                    <div class="col-md-1"></div>
                 </div><!-- row -->
             </div><!-- marca2 -->
         </div><!-- container -->

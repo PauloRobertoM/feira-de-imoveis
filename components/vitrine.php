@@ -14,7 +14,7 @@
 				<?php
 		        	$vitrines = rwmb_meta('vitrines_foto', 'type=plupload_image', $vitrine->ID);
 		        	foreach ( $vitrines as $vitrine ) {
-		        		echo "<img src='{$vitrine['url']}' class='hidden-xs' alt='{$vitrine['alt']}' />";
+		        		echo "<img src='{$vitrine['url']}' alt='{$vitrine['alt']}' />";
 		        	}
 	        	?>
 			</div><!-- item -->

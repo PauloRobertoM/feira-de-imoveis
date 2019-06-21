@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="<?php echo site_url('/'); ?>">HOME</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">EXPOSITORES</a></li>
+                    <li><a href="<?php echo site_url('expositores'); ?>">EXPOSITORES</a></li>
                     <li><a href="<?php echo site_url('/'); ?>">NOTÍCIAS</a></li>
                     <li><a href="<?php echo site_url('/'); ?>">LOCALIZAÇÃO</a></li>
                     <li><a href="<?php echo site_url('/'); ?>">CONTATO</a></li>
