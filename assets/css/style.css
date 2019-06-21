@@ -440,7 +440,7 @@ footer p {
     font-size: 34px;
     font-weight: bold;
     color: #20192d;
-    margin: 0;
+    margin: 40px 0 20px;
 }
 .interna p {
     font-size: 16px;
@@ -466,10 +466,6 @@ footer p {
 }
 .btns a:hover {
     background: #7a268b;
-}
-
-.expositores h1 {
-    margin: 40px 0 20px;
 }
 
 .expositores .item {
@@ -523,6 +519,75 @@ footer p {
 }
 .expositores .item:hover h4 {
     color: #79268b;
+}
+
+.interna.sobre p {
+    margin-bottom: 30px;
+}
+.interna.sobre .item {
+    margin-top: 80px;
+}
+
+.noticias-interna img {
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(171,171,171,1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(171,171,171,1);
+    box-shadow: 0px 0px 5px 3px rgba(171,171,171,1);
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0 20px 20px 0;
+}
+.titulo-interna {
+    border: 3px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 50px 0 60px;
+}
+.noticias-interna .titulo-interna h1 {
+    margin: 0 0 30px;
+}
+.noticias-interna .titulo-interna p {
+    margin-bottom: 0;
+    font-size: 17px;
+    color: #998b9b;
+    text-align: center;
+    border: 2px solid #dbdbdb;
+    padding: 5px 10px;
+    display: table;
+}
+.titulo-interna>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-interna h4 {
+    font-size: 11px;
+    color: #998b9b;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 0 0 20px;
+}
+.titulo-interna ul {
+    display: flex;
+    margin: 0;
+}
+.titulo-interna ul>li {
+    margin: 0 10px;
+}
+.titulo-interna .fa {
+    font-size: 30px;
+    color: #ac0084;
+}
+
+.outras-noticias {
+    padding-top: 0;
+}
+.outras-noticias h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #20192d;
+    text-align: center;
+    margin: 0 0 40px;
 }
 
 /* --- MOBILE --- */
@@ -691,6 +756,11 @@ footer p {
     }
     .menu-geral ul>li:after {
         display: none;
+    }
+    .noticias-interna img {
+        width: 100%;
+        height: auto;
+        float: none;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {

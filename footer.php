@@ -1,9 +1,48 @@
+        <section class="marcas">
+            <div class="container">
+                <div class="marca1">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <h2>patrocínio master</h2>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/caixa.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/governo.png" alt="">
+                        </div><!-- md-6 -->
+                        <div class="col-md-6 col-sm-6">
+                            <h2>patrocínio master</h2>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fiep.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/imovel.png" alt="">
+                        </div><!-- md-6 -->
+                    </div><!-- row -->
+                </div><!-- marca1 -->
+            </div><!-- container -->
+        </section><!-- marcas -->
+
+        <section class="marcas marcas2">
+            <div class="container">
+                <div class="marca2">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5 col-sm-6">
+                            <h2>ORGANIZAÇÃO</h2>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/infinitoo.png" alt="">
+                        </div><!-- md-5 -->
+                        <div class="col-md-5 col-sm-6">
+                            <h2>REALIZAÇÃO</h2>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ademi.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sinduscon.png" alt="">
+                        </div><!-- md-5 -->
+                        <div class="col-md-1"></div>
+                    </div><!-- row -->
+                </div><!-- marca2 -->
+            </div><!-- container -->
+        </section><!-- marcas -->
+
         <section class="menu-geral">
             <div class="container">
                 <ul>
-                    <li><a href="<?php echo site_url('/'); ?>">HOME</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">EXPOSITORES</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">NOTÍCIAS</a></li>
+                    <li><a href="<?php echo site_url('a-feira'); ?>">A FEIRA</a></li>
+                    <li><a href="<?php echo site_url('expositores'); ?>">EXPOSITORES</a></li>
+                    <li><a href="<?php echo site_url('noticias'); ?>">NOTÍCIAS</a></li>
                     <li><a href="<?php echo site_url('/'); ?>">LOCALIZAÇÃO</a></li>
                     <li><a href="<?php echo site_url('/'); ?>">CONTATO</a></li>
                 </ul><!-- .nav -->

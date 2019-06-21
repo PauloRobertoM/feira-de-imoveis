@@ -55,20 +55,7 @@
         </div><!-- container -->
     </section><!-- dados -->
 
-    <section class="app">
-        <div class="container">
-            <div>
-                <div>
-                    <h4>Baixe já o nosso aplicativo.</h4>
-                    <p>Encontre seu imível ideal com<br />apenas alguns toques.</p>
-                </div>
-                <ul>
-                    <li><a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/app-play.png"></a></li>
-                    <li><a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/app-apple.png"></a></li>
-                </ul>
-            </div>
-        </div><!-- container -->
-    </section><!-- app -->
+    <?php include 'content-app.php'; ?>
 
     <section class="sobre">
         <div class="container">
@@ -99,45 +86,6 @@
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- sobre -->
-
-    <section class="marcas">
-        <div class="container">
-            <div class="marca1">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h2>patrocínio master</h2>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/caixa.png" alt="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/governo.png" alt="">
-                    </div><!-- md-6 -->
-                    <div class="col-md-6 col-sm-6">
-                        <h2>patrocínio master</h2>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fiep.png" alt="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/imovel.png" alt="">
-                    </div><!-- md-6 -->
-                </div><!-- row -->
-            </div><!-- marca1 -->
-        </div><!-- container -->
-    </section><!-- marcas -->
-
-    <section class="marcas marcas2">
-        <div class="container">
-            <div class="marca2">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5 col-sm-6">
-                        <h2>ORGANIZAÇÃO</h2>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/infinitoo.png" alt="">
-                    </div><!-- md-5 -->
-                    <div class="col-md-5 col-sm-6">
-                        <h2>REALIZAÇÃO</h2>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ademi.png" alt="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sinduscon.png" alt="">
-                    </div><!-- md-5 -->
-                    <div class="col-md-1"></div>
-                </div><!-- row -->
-            </div><!-- marca2 -->
-        </div><!-- container -->
-    </section><!-- marcas -->
 
 <?php /*
     <section class="infografico">
