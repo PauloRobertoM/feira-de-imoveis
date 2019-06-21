@@ -613,6 +613,42 @@ footer p {
     margin-top: -35px;
 }
 
+.programacao p.text-center {
+    margin-bottom: 50px;
+}
+.programacao .item {
+    margin-bottom: 50px;
+}
+.programacao .item img {
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+.programacao .item h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #20192d;
+    text-align: center;
+    margin: 0 0 10px;
+}
+.programacao .item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #55b3b6;
+    text-align: center;
+    margin: 0;
+}
+.programacao .item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3d363e;
+    text-align: center;
+    margin: 0;
+}
+
 /* --- MOBILE --- */
 @media (max-width: 767px) {
     #bs-example-navbar-collapse-1 {
