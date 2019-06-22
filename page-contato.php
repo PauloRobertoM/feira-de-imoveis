@@ -48,6 +48,7 @@
             <div class="row">
             	<div class="col-md-2 col-sm-2"></div>
             	<div class="col-md-8 col-sm-8">
+                    <div id="md"></div>
             		<form id="_form_contato">
 					    <div id="_contato_callbacks"></div>
 		                <input type="text" name="nome" id="contato_nome" class="form-control" placeholder="NOME">

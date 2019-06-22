@@ -34,7 +34,6 @@
                     <?php $semana = get_the_date('l'); ?>
                     <div class="col-md-4 col-sm-4">
                         <div class="item">
-                            <span></span>
                             <h3><?php echo "{$dia}.{$mes} • {$semana}"; ?></h3>
                             <?php
                                 $programacaos = rwmb_meta('programacaos_foto', 'type=plupload_image', $programacao->ID);

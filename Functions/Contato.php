@@ -17,6 +17,8 @@ class Contato {
    public function action_contato() {
       $this->nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING);
       $this->email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+      $this->telefone = filter_var($_POST['telefone'], FILTER_SANITIZE_STRING);
+      $this->assunto = filter_var($_POST['assunto'], FILTER_SANITIZE_STRING);
       $this->mensagem = filter_var($_POST['mensagem'], FILTER_SANITIZE_STRING);
 
       if (empty($this->nome)) {
@@ -43,12 +45,14 @@ class Contato {
 
          $body  = "<p><b>Nome:</b> {$this->nome}</p>";
          $body .= "<p><b>E-mail:</b> {$this->email}</p>";
+         $body .= "<p><b>Telefone:</b> {$this->telefone}</p>";
+         $body .= "<p><b>Assunto:</b> {$this->assunto}</p>";
 
          if ($this->mensagem)
             $this->mensagem = nl2br($this->mensagem);
             $body .= "<p><b>Mensagem:</b> {$this->mensagem}</p>";
 
-         $this->subject = "Contato, Fábio Mitidieri | {$this->nome}";
+         $this->subject = "Contato, Feira de Imóveis | {$this->nome}";
         
          if (!wp_mail($this->emails, $this->subject, $body, $headers)) {
             $erros[] = 'ops, estamos com problemas em nosso servidor. tente de novo mais tarde.';
