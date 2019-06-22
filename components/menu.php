@@ -17,7 +17,7 @@
                         <a href="#">A FEIRA</a>
                         <ul class="sub-menu">
                             <li><a href="<?php echo site_url('a-feira'); ?>">CONHEÇA</a></li>
-                            <li><a href="<?php echo site_url('progrmacao'); ?>">PROGRAMAÇÃO</a></li>
+                            <li><a href="<?php echo site_url('programacao'); ?>">PROGRAMAÇÃO</a></li>
                             <li><a href="<?php echo site_url('ultimas-edicoes'); ?>">ÚLTIMAS EDIÇÕES</a></li>
                         </ul>
                     </li>

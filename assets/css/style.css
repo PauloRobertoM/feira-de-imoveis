@@ -654,6 +654,7 @@ footer p {
     font-weight: bold;
     color: #55b3b6;
     text-align: center;
+    text-transform: capitalize;
     margin: 0;
 }
 .programacao .item p {
@@ -736,6 +737,88 @@ footer p {
 }
 .contato button:hover {
     background: linear-gradient(88deg, #79268b, #b8337e);
+}
+
+.timeline {
+    width: 1000px;
+    min-height: 700px;
+    margin: 50px auto;
+    position: relative;
+}
+.timeline:after {
+    content: "";
+    background: #212020;
+    height: 940px;
+    width: 3px;
+    position: absolute;
+    left: 50%;
+}
+.timeline > div {
+    width: 43%;
+}
+.timeline .right_side {
+    float: right;
+    margin-right: 1%;
+    margin-top: 30px;
+}
+.timeline .left_side {
+    float: left;
+    margin-left: 2%;
+    margin-top: 230px;
+}
+.timeline > div p {
+    font-size: 16px;
+    color: #566067;
+    width: 100%;
+    margin: 0 0 280px 0;
+    position: relative;
+}
+.timeline p strong {
+    font-size: 22px;
+    font-family: 'Circe Bold';
+    color: #E61A4B;
+}
+.timeline .right_side p span {
+    position: absolute;
+    top: -30px;
+    left: -260px;
+}
+.timeline .right_side p {
+    text-align: left;
+}
+.timeline .left_side p {
+    text-align: right;
+    float: right;
+    position: relative;
+}
+.timeline .left_side p span {
+    position: absolute;
+    top: -30px;
+    right: -260px;
+}
+.timeline .right_side p:after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #E61A4B;
+    border: 3px solid #FFF;
+    position: absolute;
+    top: 40%;
+    left: -66px;
+    border-radius: 50%;
+    z-index: 8
+}
+.timeline .left_side p:after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #E61A4B;
+    border: 3px solid #FFF;
+    position: absolute;
+    top: 40%;
+    right: -59px;
+    border-radius: 50%;
+    z-index: 9
 }
 
 /* --- MOBILE --- */
@@ -925,6 +1008,52 @@ footer p {
         font-size: 12px;
         background: rgba(0,0,0,0.8);
         margin-top: 0;
+    }
+    .timeline {
+        width: 100%;
+    }
+    .timeline:after {
+        height: 1540px;
+        left: 0;
+    }
+    .timeline .right_side {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .timeline > div {
+        width: 90%;
+    }
+    .timeline .right_side p span {
+        position: relative;
+        top: 15px;
+        left: 0;
+        display: table;
+    }
+    .timeline .left_side p span {
+        position: relative;
+        top: 15px;
+        right: 0;
+        display: table;
+    }
+    .timeline > div p {
+        font-size: 14px;
+        margin: 0 0 70px 0;
+    }
+    .timeline .left_side p {
+        text-align: left;
+        float: none;
+    }
+    .timeline .right_side p:after {
+        left: -43px;
+    }
+    .timeline .left_side {
+        float: right;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .timeline .left_side p:after {
+        right: 0;
+        left: -43px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
