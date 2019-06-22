@@ -28,6 +28,15 @@
     </head>
 
     <body>
-        <header>
-            <?php include 'components/menu.php'; ?>
-        </header>
+        <?php
+            global $post;
+            $url = get_permalink($post->ID);
+            if (empty($url)) { ?>
+                <header>
+                    <?php include 'components/menu.php'; ?>
+                </header>
+            <?php } else { ?>
+                <header class="header-interna">
+                    <?php include 'components/menu.php'; ?>
+                </header>
+            <?php } ?>

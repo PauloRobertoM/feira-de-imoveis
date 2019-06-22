@@ -13,11 +13,18 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="<?php echo site_url('a-feira'); ?>">A FEIRA</a></li>
+                    <li>
+                        <a href="#">A FEIRA</a>
+                        <ul class="sub-menu">
+                            <li><a href="<?php echo site_url('a-feira'); ?>">CONHEÇA</a></li>
+                            <li><a href="<?php echo site_url('progrmacao'); ?>">PROGRAMAÇÃO</a></li>
+                            <li><a href="<?php echo site_url('ultimas-edicoes'); ?>">ÚLTIMAS EDIÇÕES</a></li>
+                        </ul>
+                    </li>
                     <li><a href="<?php echo site_url('expositores'); ?>">EXPOSITORES</a></li>
                     <li><a href="<?php echo site_url('noticias'); ?>">NOTÍCIAS</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">LOCALIZAÇÃO</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">CONTATO</a></li>
+                    <li><a href="<?php echo site_url('localizacao'); ?>">LOCALIZAÇÃO</a></li>
+                    <li><a href="<?php echo site_url('contato'); ?>">CONTATO</a></li>
                 </ul><!-- .nav -->
             </div><!-- .navbar-collapse -->
         </div><!-- container -->

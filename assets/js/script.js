@@ -18,11 +18,12 @@
             }
         }
     });
-    var perfil = $("#perfil").position();
-    $('.perfil').click(function() {
-        $('html, body').animate({
-            scrollTop: perfil.top
-        }, 500);
-        return false;
+    $('.nav li > .sub-menu').parent().hover(function() {
+        var submenu = $(this).children('.sub-menu');
+        if ( $(submenu).is(':hidden') ) {
+            $(submenu).slideDown(200);
+        } else {
+            $(submenu).slideUp(200);
+        }
     });
 })(jQuery, window);

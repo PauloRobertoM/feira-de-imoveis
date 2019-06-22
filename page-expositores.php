@@ -15,7 +15,7 @@
         <div class="container">
             <h4 class="text-center">15 A 19 de Agosto • Centro de Eventos FIEP</h4>
             <h1 class="text-center">Os melhores expositores do Brasil estão aqui</h1>
-            <p class="text-center">Na edição 2018, a Feira de Imóveis do Paraná vai contar com diversos expositores, entre construtoras, imobiliárias, incorporadoras e empresas relacionadas à construção civil.</p>
+            <p class="text-center">Na edição 2019, a Feira de Imóveis do Paraná vai contar com diversos expositores, entre construtoras, imobiliárias, incorporadoras e empresas relacionadas à construção civil.</p>
             <div class="btns">
                 <a href="">mapa da feira</a>
                 <a href="">patrocine a feira</a>

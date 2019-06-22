@@ -14,8 +14,8 @@
     <section class="interna programacao">
         <div class="container">
             <h4 class="text-center">15 A 19 de Agosto • Centro de Eventos FIEP</h4>
-            <h1 class="text-center">Palestras, recreação e muito mais na programação da Feira de Imóveis 2018</h1>
-            <p class="text-center">A 27ª Feira de Imóveis do Paraná 2018, que acontece de 15 a 19 de agosto, no Centro de Eventos da Fiep, na Av. das Torres, em Curitiba, terá PALESTRAS E SHOWS GRATUITOS. Programe-se e participe!</p>
+            <h1 class="text-center">Palestras, recreação e muito mais na programação da Feira de Imóveis 2019</h1>
+            <p class="text-center">A 28ª Feira de Imóveis do Paraná 2019, que acontece de 15 a 19 de agosto, no Centro de Eventos da Fiep, na Av. das Torres, em Curitiba, terá PALESTRAS E SHOWS GRATUITOS. Programe-se e participe!</p>
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="item">

@@ -43,8 +43,8 @@
                     <li><a href="<?php echo site_url('a-feira'); ?>">A FEIRA</a></li>
                     <li><a href="<?php echo site_url('expositores'); ?>">EXPOSITORES</a></li>
                     <li><a href="<?php echo site_url('noticias'); ?>">NOTÍCIAS</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">LOCALIZAÇÃO</a></li>
-                    <li><a href="<?php echo site_url('/'); ?>">CONTATO</a></li>
+                    <li><a href="<?php echo site_url('localizacao'); ?>">LOCALIZAÇÃO</a></li>
+                    <li><a href="<?php echo site_url('contato'); ?>">CONTATO</a></li>
                 </ul><!-- .nav -->
             </div><!-- container -->
         </section><!-- menu-geral -->
